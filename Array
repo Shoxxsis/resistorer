@@ -1,0 +1,32 @@
+int timer = 1000;
+//-
+int ledPins[6]={2, 7, 4, 6, 5, 3};
+//-
+int pinCount = 6;
+
+void setup() {
+
+    for (int thisPin = 0; thisPin < pinCount; thisPin++) {
+
+        pinMode(ledPins[thisPin], OUTPUT);
+§
+    }
+}
+
+void loop() {
+
+    delay(timer);
+
+    for (int thisPin = 0; thisPin < pinCount; thisPin++) {
+
+        if (thisPin % 2 == 0) {
+
+            digitalWrite(ledPins[thisPin], HIGH);
+
+        }
+        else {
+
+            digitalWrite(ledPins[thisPin], LOW);
+        }
+    }
+}
