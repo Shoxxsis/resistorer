@@ -1,0 +1,2 @@
+# resistorer
+Arrays och resistorer
